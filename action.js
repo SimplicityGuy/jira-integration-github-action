@@ -46,8 +46,7 @@ module.exports = class {
     console.log(`Searching in string: \n ${searchStr}`)
 
     if (!match) {
-      console.log(`String does not contain issueKeys`)
-
+      console.log(`String does not contain any issues.`)
       return
     }
 

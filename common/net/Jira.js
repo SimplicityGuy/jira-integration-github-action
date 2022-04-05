@@ -77,8 +77,7 @@ class Jira {
       headers.Authorization = `Basic ${Buffer.from(`${this.email}:${this.token}`).toString('base64')}`
     }
 
-    // strong check for undefined
-    // cause body variable can be 'false' boolean value
+    // strong check for undefined because body variable can be 'false' boolean value
     if (body && headers['Content-Type'] === 'application/json') {
       body = JSON.stringify(body)
     }

@@ -19,7 +19,7 @@ async function exec () {
     }).execute()
 
     if (result) {
-      console.log(`Detected issueKey: ${result.issue}`)
+      console.log(`Detected issue(s): ${result.issue}`)
       console.log(`Saving ${result.issue} to ${cliConfigPath}`)
       console.log(`Saving ${result.issue} to ${configPath}`)
 
